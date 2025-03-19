@@ -1,6 +1,6 @@
 # ms-graph-api-extension-attribute 
 
-Generates queries to the ms graph api in azure ad to obtain user group membership details.
+Generates queries to the Microsost graph api in azure ad to obtain user group membership details.
 
 Use case is for when your org has no ldap/ldaps service to utilize and jamf pro on-prem requires ldaps for scoping to azure ad groups. As we no longer bind to AD we cannot have the endpoints query AD directly. And we do not want to store api tokens etc on the endpoints, so the idea is to use a AWS function proxy api handler that responds to just basic requests when supplied a specific payload.
 
